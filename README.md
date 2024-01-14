@@ -15,6 +15,21 @@ EXEC dbo.spText_Search 'test'
 Elemento        Occorrenze
 spText_Search	    1
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+spCreatePassword.sql
+
+Stored Procedure per la creazione di una password randomica con caratteri minuscoli, maiuscoli, numeri e caratteri speciali con dimensione passata in ingresso.
+
+(Stored Procedure for create a random password with alphabetic, special and numeric characters with input length size)
+
+PROCEDURE [dbo].[spCreatePassword](@PasswordLen int, @Password VARCHAR(50) OUT)
+
+-- utilizzo
+DECLARE @sPWD varchar(50)
+EXEC dbo.spCreatePassword 12, @sPWD OUT
+SELECT @sPWD
+
 MIT license
 
 Gianlorenzo Fabio
