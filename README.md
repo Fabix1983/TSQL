@@ -1,5 +1,5 @@
 
-spText_Search.sql
+-> spText_Search.sql
 
 Procedura per la ricerca di una stringa di input all'interno delle stored procedure, funzioni e viste di un dato db SQL Server, con indicazione in uscita dell'elemento trovato con il relativo numero di occorrenze.
 
@@ -17,7 +17,7 @@ spText_Search	    1
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-spCreatePassword.sql
+-> spCreatePassword.sql
 
 Stored Procedure per la creazione di una password randomica con caratteri minuscoli, maiuscoli, numeri e caratteri speciali con dimensione passata in ingresso.
 
@@ -29,6 +29,44 @@ PROCEDURE [dbo].[spCreatePassword](@PasswordLen int, @Password VARCHAR(50) OUT)
 DECLARE @sPWD varchar(50)
 EXEC dbo.spCreatePassword 12, @sPWD OUT
 SELECT @sPWD
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> scriptTurnTable.sql
+
+Codice T-sql per concatenare in una colonna i record precedenti in righe a parità di riferimento chiave.
+
+(T-sql code for concatenate the previous records in rows, with the same key reference, in a single column)
+
+Esempio risultati:
+
+RUN	    Regione	Provincia
+PRIMA	Lazio	Frosinone
+PRIMA	Lazio	Latina
+PRIMA	Lazio	Rieti
+PRIMA	Lazio	Roma
+PRIMA	Lazio	Viterbo
+PRIMA	Toscana	Arezzo
+PRIMA	Toscana	Firenze
+PRIMA	Toscana	Grosseto
+PRIMA	Toscana	Livorno
+PRIMA	Toscana	Lucca
+PRIMA	Toscana	Massa-Carrara
+PRIMA	Toscana	Pisa
+PRIMA	Toscana	Pistoia
+PRIMA	Toscana	Siena
+PRIMA	Toscana	Prato
+PRIMA	Umbria	Terni
+PRIMA	Umbria	Perugia
+PRIMA	Valle d'Aosta	Aosta
+
+RUN	    Regione	        ElencoProvince
+DOPO	Lazio	        Frosinone Latina Rieti Roma Viterbo
+DOPO	Toscana	        Arezzo Firenze Grosseto Livorno Lucca Massa-Carrara Pisa Pistoia Siena Prato
+DOPO	Umbria	        Terni Perugia
+DOPO	Valle d'Aosta	Aosta
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MIT license
 
