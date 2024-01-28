@@ -40,6 +40,7 @@ Codice T-sql per concatenare in una colonna i record precedenti in righe a parit
 
 Esempio risultati:
 
+PRIMA:
 Regione	Provincia
 Lazio	Frosinone
 Lazio	Latina
@@ -60,10 +61,15 @@ Umbria	Terni
 Umbria	Perugia
 Valle d'Aosta	Aosta
 
+DOPO:
 Regione         ElencoProvince
+
 Lazio           Frosinone Latina Rieti Roma Viterbo
+
 Toscana         Arezzo Firenze Grosseto Livorno Lucca Massa-Carrara Pisa Pistoia Siena Prato
+
 Umbria          Terni Perugia
+
 Valle d'Aosta   Aosta
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
