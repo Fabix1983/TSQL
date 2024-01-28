@@ -40,31 +40,31 @@ Codice T-sql per concatenare in una colonna i record precedenti in righe a parit
 
 Esempio risultati:
 
-RUN	    Regione	Provincia
-PRIMA	Lazio	Frosinone
-PRIMA	Lazio	Latina
-PRIMA	Lazio	Rieti
-PRIMA	Lazio	Roma
-PRIMA	Lazio	Viterbo
-PRIMA	Toscana	Arezzo
-PRIMA	Toscana	Firenze
-PRIMA	Toscana	Grosseto
-PRIMA	Toscana	Livorno
-PRIMA	Toscana	Lucca
-PRIMA	Toscana	Massa-Carrara
-PRIMA	Toscana	Pisa
-PRIMA	Toscana	Pistoia
-PRIMA	Toscana	Siena
-PRIMA	Toscana	Prato
-PRIMA	Umbria	Terni
-PRIMA	Umbria	Perugia
-PRIMA	Valle d'Aosta	Aosta
+Regione	Provincia
+Lazio	Frosinone
+Lazio	Latina
+Lazio	Rieti
+Lazio	Roma
+Lazio	Viterbo
+Toscana	Arezzo
+Toscana	Firenze
+Toscana	Grosseto
+Toscana	Livorno
+Toscana	Lucca
+Toscana	Massa-Carrara
+Toscana	Pisa
+Toscana	Pistoia
+Toscana	Siena
+Toscana	Prato
+Umbria	Terni
+Umbria	Perugia
+Valle d'Aosta	Aosta
 
-RUN	    Regione	        ElencoProvince
-DOPO	Lazio	        Frosinone Latina Rieti Roma Viterbo
-DOPO	Toscana	        Arezzo Firenze Grosseto Livorno Lucca Massa-Carrara Pisa Pistoia Siena Prato
-DOPO	Umbria	        Terni Perugia
-DOPO	Valle d'Aosta	Aosta
+Regione         ElencoProvince
+Lazio           Frosinone Latina Rieti Roma Viterbo
+Toscana         Arezzo Firenze Grosseto Livorno Lucca Massa-Carrara Pisa Pistoia Siena Prato
+Umbria          Terni Perugia
+Valle d'Aosta   Aosta
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
