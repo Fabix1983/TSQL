@@ -1,5 +1,5 @@
 
--> spText_Search.sql
+-> <b>spText_Search.sql</b>
 
 Procedura per la ricerca di una stringa di input all'interno delle stored procedure, funzioni e viste di un dato db SQL Server, con indicazione in uscita dell'elemento trovato con il relativo numero di occorrenze.
 
@@ -17,7 +17,7 @@ spText_Search	    1
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--> spCreatePassword.sql
+-> <b>spCreatePassword.sql</b>
 
 Stored Procedure per la creazione di una password randomica con caratteri minuscoli, maiuscoli, numeri e caratteri speciali con dimensione passata in ingresso.
 
@@ -32,7 +32,7 @@ SELECT @sPWD
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--> scriptTurnTable.sql
+-> <b>scriptTurnTable.sql</b>
 
 Codice T-sql per concatenare in una colonna i record precedenti in righe a parità di riferimento chiave.
 
