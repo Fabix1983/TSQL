@@ -76,8 +76,12 @@ Valle d'Aosta   Aosta
 -> <b>Test Utilizzo WITH (NOLOCK)</b>
 
 FILE:
-OpTransaction.sql (lasciare transazione pending)
-SelectTest.sql (provare le diverse select, quella senza no lock non restituirà i dati finche la transazione non viene confermata o annullata.)
+
+OpTransaction.sql 
+(lasciare transazione pending)
+
+SelectTest.sql 
+(provare le diverse select, quella senza no lock non restituirà i dati finche la transazione non viene confermata o annullata.)
 
 L'utilizzo della clausola WITH (NOLOCK) applicata a SELECT di SQL SERVER permette di ottenere i risultati della select anche quando questa è lockata da una transazione pending permettendo cosi
 di evitare lunghi tempi di attesa dovuti all'attesa del commit/rollback della transazione relativa o possibili deadlock del recupero dati.
