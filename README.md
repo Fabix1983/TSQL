@@ -85,10 +85,10 @@ di evitare lunghi tempi di attesa dovuti all'attesa del commit/rollback della tr
 Svantaggio dell'utilizzo di questa clausola è ovviamente il fatto che se la transazione va in rollback i dati in uscita mostrati non sono coerenti con la transazione in quanto la select restituisce una "fotografia dei dati in quel preciso istante" pertanto non è consiglibile applicarla a quei contesti in cui i dati subiscono variazioni molto frequenti; ma nei contesti dove applicabile porta a una riduzione dei tempi di fornitura dei dati da parte delle select coinvolte.
 
 ESEMPIO di uso:
-
-SELECT 'WITH (NOLOCK)', * 
+SELECT * 
 FROM tblUtenti UT WITH (NOLOCK)
 INNER JOIN tblProfessioni PR WITH (NOLOCK) ON Pr.ID = UT.RifProfessione
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MIT license
