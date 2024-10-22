@@ -94,6 +94,13 @@ FROM tblUtenti UT WITH (NOLOCK)
 INNER JOIN tblProfessioni PR WITH (NOLOCK) ON Pr.ID = UT.RifProfessione
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-> <b>Randomizzare un record di una tabella</b>
+
+Con la seguente Select è possibile randomizzare un record pescato dalla tabella : tablename
+
+SELECT TOP 1 * FROM tablename ORDER BY NEWID()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MIT license
 
