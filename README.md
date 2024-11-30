@@ -102,6 +102,17 @@ SELECT TOP 1 * FROM tablename ORDER BY NEWID()
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+-> <b>TabelleSenzaIndice.sql</b>
+
+Select per la ricerca delle tabelle in un dato DB <b>senza Indici</b>.
+
+SELECT OBJECT_SCHEMA_NAME( object_id ) as SchemaName, name AS TableName
+FROM sys.tables
+WHERE OBJECTPROPERTY(object_id,'tablehasprimaryKey') = 0 
+ORDER BY SchemaName, TableName ;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 MIT license
 
 Gianlorenzo Fabio
