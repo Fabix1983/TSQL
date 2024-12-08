@@ -113,6 +113,33 @@ ORDER BY SchemaName, TableName ;
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+-> Statistiche esecuzione query SQL Server da SSMS (SQL Server Management Studio):
+
+SET STATISTICS TIME ON
+SET STATISTICS IO ON
+
+-- Esempio Query da TESTARE
+SELECT * FROM tblComuni
+
+SET STATISTICS IO OFF
+SET STATISTICS TIME OFF
+
+Risultati nella schermata Messaggi:
+
+Tempo di esecuzione SQL Server: 
+ tempo di CPU = 0 ms, tempo trascorso = 0 ms.
+
+(8092 righe interessate)
+Tabella 'tblComuni'. Conteggio analisi 1, letture logiche 60, letture fisiche 0, letture server di pagine 0, letture read-ahead 0, letture read-ahead server di pagine 0, letture logiche LOB 0, letture fisiche LOB 0, letture LOB server di pagine 0, letture LOB read-ahead 0, letture read-ahead LOB server di pagine 0.
+
+Tempo di esecuzione SQL Server: 
+ tempo di CPU = 16 ms, tempo trascorso = 75 ms.
+
+Tempo di esecuzione SQL Server: 
+ tempo di CPU = 0 ms, tempo trascorso = 0 ms.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 MIT license
 
 Gianlorenzo Fabio
