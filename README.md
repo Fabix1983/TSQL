@@ -73,7 +73,7 @@ Umbria          Terni Perugia
 Valle d'Aosta   Aosta
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
--> <b>Test Utilizzo WITH (NOLOCK)</b>
+-> <b>Test Utilizzo opzione: WITH (NOLOCK)</b>
 
 FILE:
 
