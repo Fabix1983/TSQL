@@ -113,15 +113,17 @@ ORDER BY SchemaName, TableName ;
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--> Statistiche esecuzione query SQL Server da SSMS (SQL Server Management Studio):
+-> <b>Statistiche esecuzione query SQL Server da SSMS</b> (SQL Server Management Studio):
 
 SET STATISTICS TIME ON
+
 SET STATISTICS IO ON
 
 -- Esempio Query da TESTARE
 SELECT * FROM tblComuni
 
 SET STATISTICS IO OFF
+
 SET STATISTICS TIME OFF
 
 Risultati nella schermata Messaggi:
